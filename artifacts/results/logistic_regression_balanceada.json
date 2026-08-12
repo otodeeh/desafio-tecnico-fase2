@@ -1,0 +1,90 @@
+{
+  "model_name": "logistic_regression",
+  "config": {
+    "name": "balanceada",
+    "population_size": 14,
+    "generations": 8,
+    "crossover_rate": 0.85,
+    "mutation_rate": 0.2,
+    "tournament_size": 3,
+    "elitism": 2,
+    "random_state": 202
+  },
+  "best_genes": {
+    "log10_C": -0.8453353600806306,
+    "class_weight": "balanced",
+    "solver": "lbfgs"
+  },
+  "best_parameters": {
+    "class_weight": "balanced",
+    "solver": "lbfgs",
+    "C": 0.14277909994704513
+  },
+  "best_fitness": 0.9705728465307413,
+  "cv_metrics": {
+    "accuracy": 0.982,
+    "precision": 0.9843381843381843,
+    "recall": 0.9678520625889048,
+    "f1": 0.9756257309941521,
+    "roc_auc": 0.9954607894336249,
+    "fitness": 0.9705728465307413
+  },
+  "history": [
+    {
+      "generation": 0,
+      "best": 0.9670559632618032,
+      "mean": 0.9307404833693099,
+      "std": 0.032258325964584875
+    },
+    {
+      "generation": 1,
+      "best": 0.9696886360044256,
+      "mean": 0.9547199419077244,
+      "std": 0.011974386268965048
+    },
+    {
+      "generation": 2,
+      "best": 0.9696886360044256,
+      "mean": 0.9628919523155417,
+      "std": 0.008638767235828435
+    },
+    {
+      "generation": 3,
+      "best": 0.9696886360044256,
+      "mean": 0.9679225495351511,
+      "std": 0.0024071386562800677
+    },
+    {
+      "generation": 4,
+      "best": 0.9696886360044256,
+      "mean": 0.9620987663423959,
+      "std": 0.01197343589687712
+    },
+    {
+      "generation": 5,
+      "best": 0.9705728465307413,
+      "mean": 0.9680947271083741,
+      "std": 0.003811492254049747
+    },
+    {
+      "generation": 6,
+      "best": 0.9705728465307413,
+      "mean": 0.9697534343639608,
+      "std": 0.0004005901170789891
+    },
+    {
+      "generation": 7,
+      "best": 0.9705728465307413,
+      "mean": 0.9693558476829047,
+      "std": 0.0034296286265447498
+    },
+    {
+      "generation": 8,
+      "best": 0.9705728465307413,
+      "mean": 0.9690902413691888,
+      "std": 0.0048648600942911785
+    }
+  ],
+  "evaluations": 39,
+  "duration_seconds": 2.415
+}

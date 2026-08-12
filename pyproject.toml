@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tech-challenge-fase2"
+version = "0.1.0"
+description = "Otimização genética e explicação por LLM de modelos de diagnóstico da Fase 1."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "joblib>=1.4,<2",
+  "matplotlib>=3.9,<4",
+  "numpy>=2.0,<3",
+  "openai>=2.0,<3",
+  "pandas>=2.2,<4",
+  "prometheus-client>=0.21,<1",
+  "pydantic>=2.9,<3",
+  "python-dotenv>=1.0,<2",
+  "scikit-learn>=1.6,<2",
+  "uvicorn[standard]>=0.34,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "httpx>=0.28,<1",
+  "ipykernel>=6.29,<8",
+  "jinja2>=3.1,<4",
+  "nbclient>=0.10,<1",
+  "nbformat>=5.10,<6",
+  "pytest>=8.3,<10",
+  "pytest-cov>=6,<8",
+  "seaborn>=0.13,<1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q --disable-warnings"
+testpaths = ["tests"]

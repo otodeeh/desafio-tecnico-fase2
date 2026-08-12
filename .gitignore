@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest_tmp/
+pytest-cache-files-*/
+.coverage
+htmlcov/
+.env
+.idea/
+.vscode/
+tmp/
+artifacts/models/*.joblib
+artifacts/logs/
+data/raw/*.csv
+!data/raw/.gitkeep

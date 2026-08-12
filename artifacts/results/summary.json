@@ -1,0 +1,674 @@
+{
+  "dataset_source": "C:\\Users\\User\\Desktop\\Tech Challenge\\desafio-tecnico-fase1\\data.csv",
+  "train_samples": 500,
+  "test_samples": 69,
+  "cv_splits": 5,
+  "fitness_definition": "0.65 * recall + 0.35 * f1",
+  "models": {
+    "logistic_regression": {
+      "baseline_test_metrics": {
+        "accuracy": 0.9855072463768116,
+        "precision": 1.0,
+        "recall": 0.9615384615384616,
+        "f1": 0.9803921568627451,
+        "roc_auc": 0.9946332737030411,
+        "confusion_matrix": [
+          [
+            43,
+            0
+          ],
+          [
+            1,
+            25
+          ]
+        ]
+      },
+      "optimized_test_metrics": {
+        "accuracy": 0.9710144927536232,
+        "precision": 0.9615384615384616,
+        "recall": 0.9615384615384616,
+        "f1": 0.9615384615384616,
+        "roc_auc": 0.998211091234347,
+        "confusion_matrix": [
+          [
+            42,
+            1
+          ],
+          [
+            1,
+            25
+          ]
+        ]
+      },
+      "selected_experiment": "compacta",
+      "best_parameters": {
+        "class_weight": "balanced",
+        "solver": "lbfgs",
+        "C": 0.042884461196201054
+      },
+      "best_cv_metrics": {
+        "accuracy": 0.984,
+        "precision": 0.9891891891891891,
+        "recall": 0.9675675675675676,
+        "f1": 0.97799875893644,
+        "roc_auc": 0.9953667953667955,
+        "fitness": 0.9712184845466729
+      },
+      "experiments": [
+        {
+          "model_name": "logistic_regression",
+          "config": {
+            "name": "compacta",
+            "population_size": 10,
+            "generations": 6,
+            "crossover_rate": 0.8,
+            "mutation_rate": 0.1,
+            "tournament_size": 3,
+            "elitism": 2,
+            "random_state": 101
+          },
+          "best_genes": {
+            "log10_C": -1.3677000420626433,
+            "class_weight": "balanced",
+            "solver": "lbfgs"
+          },
+          "best_parameters": {
+            "class_weight": "balanced",
+            "solver": "lbfgs",
+            "C": 0.042884461196201054
+          },
+          "best_fitness": 0.9712184845466729,
+          "cv_metrics": {
+            "accuracy": 0.984,
+            "precision": 0.9891891891891891,
+            "recall": 0.9675675675675676,
+            "f1": 0.97799875893644,
+            "roc_auc": 0.9953667953667955,
+            "fitness": 0.9712184845466729
+          },
+          "history": [
+            {
+              "generation": 0,
+              "best": 0.9712184845466729,
+              "mean": 0.9516517467602672,
+              "std": 0.02275706357076858
+            },
+            {
+              "generation": 1,
+              "best": 0.9712184845466729,
+              "mean": 0.9648790506293411,
+              "std": 0.004749418717690163
+            },
+            {
+              "generation": 2,
+              "best": 0.9712184845466729,
+              "mean": 0.9628372471835623,
+              "std": 0.013885918642052063
+            },
+            {
+              "generation": 3,
+              "best": 0.9712184845466729,
+              "mean": 0.970017307187039,
+              "std": 0.0018900506822725875
+            },
+            {
+              "generation": 4,
+              "best": 0.9712184845466729,
+              "mean": 0.9120293414503513,
+              "std": 0.177567429288965
+            },
+            {
+              "generation": 5,
+              "best": 0.9712184845466729,
+              "mean": 0.9676976707884222,
+              "std": 0.010562441274751921
+            },
+            {
+              "generation": 6,
+              "best": 0.9712184845466729,
+              "mean": 0.971218484546673,
+              "std": 0.0
+            }
+          ],
+          "evaluations": 21,
+          "duration_seconds": 1.301
+        },
+        {
+          "model_name": "logistic_regression",
+          "config": {
+            "name": "balanceada",
+            "population_size": 14,
+            "generations": 8,
+            "crossover_rate": 0.85,
+            "mutation_rate": 0.2,
+            "tournament_size": 3,
+            "elitism": 2,
+            "random_state": 202
+          },
+          "best_genes": {
+            "log10_C": -0.8453353600806306,
+            "class_weight": "balanced",
+            "solver": "lbfgs"
+          },
+          "best_parameters": {
+            "class_weight": "balanced",
+            "solver": "lbfgs",
+            "C": 0.14277909994704513
+          },
+          "best_fitness": 0.9705728465307413,
+          "cv_metrics": {
+            "accuracy": 0.982,
+            "precision": 0.9843381843381843,
+            "recall": 0.9678520625889048,
+            "f1": 0.9756257309941521,
+            "roc_auc": 0.9954607894336249,
+            "fitness": 0.9705728465307413
+          },
+          "history": [
+            {
+              "generation": 0,
+              "best": 0.9670559632618032,
+              "mean": 0.9307404833693099,
+              "std": 0.032258325964584875
+            },
+            {
+              "generation": 1,
+              "best": 0.9696886360044256,
+              "mean": 0.9547199419077244,
+              "std": 0.011974386268965048
+            },
+            {
+              "generation": 2,
+              "best": 0.9696886360044256,
+              "mean": 0.9628919523155417,
+              "std": 0.008638767235828435
+            },
+            {
+              "generation": 3,
+              "best": 0.9696886360044256,
+              "mean": 0.9679225495351511,
+              "std": 0.0024071386562800677
+            },
+            {
+              "generation": 4,
+              "best": 0.9696886360044256,
+              "mean": 0.9620987663423959,
+              "std": 0.01197343589687712
+            },
+            {
+              "generation": 5,
+              "best": 0.9705728465307413,
+              "mean": 0.9680947271083741,
+              "std": 0.003811492254049747
+            },
+            {
+              "generation": 6,
+              "best": 0.9705728465307413,
+              "mean": 0.9697534343639608,
+              "std": 0.0004005901170789891
+            },
+            {
+              "generation": 7,
+              "best": 0.9705728465307413,
+              "mean": 0.9693558476829047,
+              "std": 0.0034296286265447498
+            },
+            {
+              "generation": 8,
+              "best": 0.9705728465307413,
+              "mean": 0.9690902413691888,
+              "std": 0.0048648600942911785
+            }
+          ],
+          "evaluations": 39,
+          "duration_seconds": 2.415
+        },
+        {
+          "model_name": "logistic_regression",
+          "config": {
+            "name": "exploratoria",
+            "population_size": 18,
+            "generations": 10,
+            "crossover_rate": 0.7,
+            "mutation_rate": 0.3,
+            "tournament_size": 4,
+            "elitism": 2,
+            "random_state": 303
+          },
+          "best_genes": {
+            "log10_C": -1.313977705583004,
+            "class_weight": "balanced",
+            "solver": "liblinear"
+          },
+          "best_parameters": {
+            "class_weight": "balanced",
+            "solver": "liblinear",
+            "C": 0.04853134129858913
+          },
+          "best_fitness": 0.9667983857358047,
+          "cv_metrics": {
+            "accuracy": 0.974,
+            "precision": 0.9632282282282283,
+            "recall": 0.9677098150782362,
+            "f1": 0.9651057312427176,
+            "roc_auc": 0.9948529052943315,
+            "fitness": 0.9667983857358047
+          },
+          "history": [
+            {
+              "generation": 0,
+              "best": 0.9564004987885131,
+              "mean": 0.8867517827412615,
+              "std": 0.1733546694837125
+            },
+            {
+              "generation": 1,
+              "best": 0.9596884636619316,
+              "mean": 0.9524089919293066,
+              "std": 0.011565702090582127
+            },
+            {
+              "generation": 2,
+              "best": 0.9615263632053106,
+              "mean": 0.9562136329659192,
+              "std": 0.0031663381917561412
+            },
+            {
+              "generation": 3,
+              "best": 0.9634222919386584,
+              "mean": 0.9459245663622146,
+              "std": 0.025308971110886768
+            },
+            {
+              "generation": 4,
+              "best": 0.9667983857358047,
+              "mean": 0.9587828770922544,
+              "std": 0.005223015925670159
+            },
+            {
+              "generation": 5,
+              "best": 0.9667983857358047,
+              "mean": 0.9499276913992224,
+              "std": 0.017211731768304973
+            },
+            {
+              "generation": 6,
+              "best": 0.9667983857358047,
+              "mean": 0.9491742345276867,
+              "std": 0.02652899871222256
+            },
+            {
+              "generation": 7,
+              "best": 0.9667983857358047,
+              "mean": 0.9623197538671088,
+              "std": 0.005535529418878967
+            },
+            {
+              "generation": 8,
+              "best": 0.9667983857358047,
+              "mean": 0.9588233633427442,
+              "std": 0.015823301072669216
+            },
+            {
+              "generation": 9,
+              "best": 0.9667983857358047,
+              "mean": 0.9602766052059672,
+              "std": 0.0074908748618476234
+            },
+            {
+              "generation": 10,
+              "best": 0.9667983857358047,
+              "mean": 0.9554379356760363,
+              "std": 0.022199262222866813
+            }
+          ],
+          "evaluations": 77,
+          "duration_seconds": 4.858
+        }
+      ]
+    },
+    "random_forest": {
+      "baseline_test_metrics": {
+        "accuracy": 0.9710144927536232,
+        "precision": 0.9615384615384616,
+        "recall": 0.9615384615384616,
+        "f1": 0.9615384615384616,
+        "roc_auc": 0.9946332737030411,
+        "confusion_matrix": [
+          [
+            42,
+            1
+          ],
+          [
+            1,
+            25
+          ]
+        ]
+      },
+      "optimized_test_metrics": {
+        "accuracy": 0.9565217391304348,
+        "precision": 0.9259259259259259,
+        "recall": 0.9615384615384616,
+        "f1": 0.9433962264150944,
+        "roc_auc": 0.9955277280858676,
+        "confusion_matrix": [
+          [
+            41,
+            2
+          ],
+          [
+            1,
+            25
+          ]
+        ]
+      },
+      "selected_experiment": "exploratoria",
+      "best_parameters": {
+        "n_estimators": 182,
+        "max_depth": 5,
+        "min_samples_split": 7,
+        "min_samples_leaf": 1,
+        "max_features": 0.5,
+        "class_weight": "balanced"
+      },
+      "best_cv_metrics": {
+        "accuracy": 0.9560000000000001,
+        "precision": 0.924675839066083,
+        "recall": 0.9677098150782362,
+        "f1": 0.9437864044111957,
+        "roc_auc": 0.9867493493979062,
+        "fitness": 0.959336621344772
+      },
+      "experiments": [
+        {
+          "model_name": "random_forest",
+          "config": {
+            "name": "compacta",
+            "population_size": 10,
+            "generations": 6,
+            "crossover_rate": 0.8,
+            "mutation_rate": 0.1,
+            "tournament_size": 3,
+            "elitism": 2,
+            "random_state": 101
+          },
+          "best_genes": {
+            "n_estimators": 155,
+            "max_depth": 8,
+            "min_samples_split": 11,
+            "min_samples_leaf": 4,
+            "max_features": "sqrt",
+            "class_weight": "balanced"
+          },
+          "best_parameters": {
+            "n_estimators": 155,
+            "max_depth": 8,
+            "min_samples_split": 11,
+            "min_samples_leaf": 4,
+            "max_features": "sqrt",
+            "class_weight": "balanced"
+          },
+          "best_fitness": 0.9542911249490196,
+          "cv_metrics": {
+            "accuracy": 0.954,
+            "precision": 0.9211775216653267,
+            "recall": 0.9621621621621621,
+            "f1": 0.9396734844103264,
+            "roc_auc": 0.9900581153552291,
+            "fitness": 0.9542911249490196
+          },
+          "history": [
+            {
+              "generation": 0,
+              "best": 0.9470541201472754,
+              "mean": 0.9354878736228649,
+              "std": 0.0069810441703583945
+            },
+            {
+              "generation": 1,
+              "best": 0.950566391686529,
+              "mean": 0.9442574972412832,
+              "std": 0.005857497643467532
+            },
+            {
+              "generation": 2,
+              "best": 0.9542911249490196,
+              "mean": 0.949516281318532,
+              "std": 0.0022848664273614865
+            },
+            {
+              "generation": 3,
+              "best": 0.9542911249490196,
+              "mean": 0.9509837859069108,
+              "std": 0.001959493912432288
+            },
+            {
+              "generation": 4,
+              "best": 0.9542911249490196,
+              "mean": 0.9479683446888668,
+              "std": 0.00727022104477109
+            },
+            {
+              "generation": 5,
+              "best": 0.9542911249490196,
+              "mean": 0.9494888978599096,
+              "std": 0.007056115797808453
+            },
+            {
+              "generation": 6,
+              "best": 0.9542911249490196,
+              "mean": 0.9504376341709936,
+              "std": 0.004667634302080103
+            }
+          ],
+          "evaluations": 36,
+          "duration_seconds": 36.293
+        },
+        {
+          "model_name": "random_forest",
+          "config": {
+            "name": "balanceada",
+            "population_size": 14,
+            "generations": 8,
+            "crossover_rate": 0.85,
+            "mutation_rate": 0.2,
+            "tournament_size": 3,
+            "elitism": 2,
+            "random_state": 202
+          },
+          "best_genes": {
+            "n_estimators": 98,
+            "max_depth": 8,
+            "min_samples_split": 12,
+            "min_samples_leaf": 4,
+            "max_features": "log2",
+            "class_weight": "balanced"
+          },
+          "best_parameters": {
+            "n_estimators": 98,
+            "max_depth": 8,
+            "min_samples_split": 12,
+            "min_samples_leaf": 4,
+            "max_features": "log2",
+            "class_weight": "balanced"
+          },
+          "best_fitness": 0.9561263915994096,
+          "cv_metrics": {
+            "accuracy": 0.9579999999999999,
+            "precision": 0.9287580437580438,
+            "recall": 0.9623044096728307,
+            "f1": 0.944652929463056,
+            "roc_auc": 0.9885155346955008,
+            "fitness": 0.9561263915994096
+          },
+          "history": [
+            {
+              "generation": 0,
+              "best": 0.95053685461081,
+              "mean": 0.9403446504881214,
+              "std": 0.005160473326366158
+            },
+            {
+              "generation": 1,
+              "best": 0.9515762249944485,
+              "mean": 0.9460286004561803,
+              "std": 0.0037535525160951825
+            },
+            {
+              "generation": 2,
+              "best": 0.9515762249944485,
+              "mean": 0.9447052541996086,
+              "std": 0.006228283022073072
+            },
+            {
+              "generation": 3,
+              "best": 0.9561263915994096,
+              "mean": 0.9482802091704607,
+              "std": 0.004088055139906341
+            },
+            {
+              "generation": 4,
+              "best": 0.9561263915994096,
+              "mean": 0.9494682222697552,
+              "std": 0.003718554262510578
+            },
+            {
+              "generation": 5,
+              "best": 0.9561263915994096,
+              "mean": 0.9503266969577719,
+              "std": 0.0029523431295078056
+            },
+            {
+              "generation": 6,
+              "best": 0.9561263915994096,
+              "mean": 0.9495246333043872,
+              "std": 0.005674219345895345
+            },
+            {
+              "generation": 7,
+              "best": 0.9561263915994096,
+              "mean": 0.9464786018439388,
+              "std": 0.006072998970378928
+            },
+            {
+              "generation": 8,
+              "best": 0.9561263915994096,
+              "mean": 0.9477655248526343,
+              "std": 0.006226265232186842
+            }
+          ],
+          "evaluations": 90,
+          "duration_seconds": 80.21
+        },
+        {
+          "model_name": "random_forest",
+          "config": {
+            "name": "exploratoria",
+            "population_size": 18,
+            "generations": 10,
+            "crossover_rate": 0.7,
+            "mutation_rate": 0.3,
+            "tournament_size": 4,
+            "elitism": 2,
+            "random_state": 303
+          },
+          "best_genes": {
+            "n_estimators": 182,
+            "max_depth": 5,
+            "min_samples_split": 7,
+            "min_samples_leaf": 1,
+            "max_features": 0.5,
+            "class_weight": "balanced"
+          },
+          "best_parameters": {
+            "n_estimators": 182,
+            "max_depth": 5,
+            "min_samples_split": 7,
+            "min_samples_leaf": 1,
+            "max_features": 0.5,
+            "class_weight": "balanced"
+          },
+          "best_fitness": 0.959336621344772,
+          "cv_metrics": {
+            "accuracy": 0.9560000000000001,
+            "precision": 0.924675839066083,
+            "recall": 0.9677098150782362,
+            "f1": 0.9437864044111957,
+            "roc_auc": 0.9867493493979062,
+            "fitness": 0.959336621344772
+          },
+          "history": [
+            {
+              "generation": 0,
+              "best": 0.9552591364215539,
+              "mean": 0.9339040326343491,
+              "std": 0.013385673011448367
+            },
+            {
+              "generation": 1,
+              "best": 0.9552591364215539,
+              "mean": 0.9434866071933283,
+              "std": 0.011323585550652068
+            },
+            {
+              "generation": 2,
+              "best": 0.9556441155422718,
+              "mean": 0.9496729264431268,
+              "std": 0.00644305398870649
+            },
+            {
+              "generation": 3,
+              "best": 0.9564847516993635,
+              "mean": 0.95315472119502,
+              "std": 0.002743516962724843
+            },
+            {
+              "generation": 4,
+              "best": 0.958077026827719,
+              "mean": 0.9509863759889716,
+              "std": 0.007673804933566597
+            },
+            {
+              "generation": 5,
+              "best": 0.958077026827719,
+              "mean": 0.9490424374063018,
+              "std": 0.008397573241869755
+            },
+            {
+              "generation": 6,
+              "best": 0.958077026827719,
+              "mean": 0.9495057667233087,
+              "std": 0.006930388268165961
+            },
+            {
+              "generation": 7,
+              "best": 0.9584295498897553,
+              "mean": 0.9496939367901945,
+              "std": 0.010233220515330885
+            },
+            {
+              "generation": 8,
+              "best": 0.959336621344772,
+              "mean": 0.9462086587449041,
+              "std": 0.01292938969530688
+            },
+            {
+              "generation": 9,
+              "best": 0.959336621344772,
+              "mean": 0.9486576962212079,
+              "std": 0.01132941341115893
+            },
+            {
+              "generation": 10,
+              "best": 0.959336621344772,
+              "mean": 0.9516200476791005,
+              "std": 0.009783154865603657
+            }
+          ],
+          "evaluations": 153,
+          "duration_seconds": 165.34
+        }
+      ]
+    }
+  }
+}

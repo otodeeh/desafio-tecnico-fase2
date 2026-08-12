@@ -1,0 +1,108 @@
+{
+  "model_name": "random_forest",
+  "config": {
+    "name": "exploratoria",
+    "population_size": 18,
+    "generations": 10,
+    "crossover_rate": 0.7,
+    "mutation_rate": 0.3,
+    "tournament_size": 4,
+    "elitism": 2,
+    "random_state": 303
+  },
+  "best_genes": {
+    "n_estimators": 182,
+    "max_depth": 5,
+    "min_samples_split": 7,
+    "min_samples_leaf": 1,
+    "max_features": 0.5,
+    "class_weight": "balanced"
+  },
+  "best_parameters": {
+    "n_estimators": 182,
+    "max_depth": 5,
+    "min_samples_split": 7,
+    "min_samples_leaf": 1,
+    "max_features": 0.5,
+    "class_weight": "balanced"
+  },
+  "best_fitness": 0.959336621344772,
+  "cv_metrics": {
+    "accuracy": 0.9560000000000001,
+    "precision": 0.924675839066083,
+    "recall": 0.9677098150782362,
+    "f1": 0.9437864044111957,
+    "roc_auc": 0.9867493493979062,
+    "fitness": 0.959336621344772
+  },
+  "history": [
+    {
+      "generation": 0,
+      "best": 0.9552591364215539,
+      "mean": 0.9339040326343491,
+      "std": 0.013385673011448367
+    },
+    {
+      "generation": 1,
+      "best": 0.9552591364215539,
+      "mean": 0.9434866071933283,
+      "std": 0.011323585550652068
+    },
+    {
+      "generation": 2,
+      "best": 0.9556441155422718,
+      "mean": 0.9496729264431268,
+      "std": 0.00644305398870649
+    },
+    {
+      "generation": 3,
+      "best": 0.9564847516993635,
+      "mean": 0.95315472119502,
+      "std": 0.002743516962724843
+    },
+    {
+      "generation": 4,
+      "best": 0.958077026827719,
+      "mean": 0.9509863759889716,
+      "std": 0.007673804933566597
+    },
+    {
+      "generation": 5,
+      "best": 0.958077026827719,
+      "mean": 0.9490424374063018,
+      "std": 0.008397573241869755
+    },
+    {
+      "generation": 6,
+      "best": 0.958077026827719,
+      "mean": 0.9495057667233087,
+      "std": 0.006930388268165961
+    },
+    {
+      "generation": 7,
+      "best": 0.9584295498897553,
+      "mean": 0.9496939367901945,
+      "std": 0.010233220515330885
+    },
+    {
+      "generation": 8,
+      "best": 0.959336621344772,
+      "mean": 0.9462086587449041,
+      "std": 0.01292938969530688
+    },
+    {
+      "generation": 9,
+      "best": 0.959336621344772,
+      "mean": 0.9486576962212079,
+      "std": 0.01132941341115893
+    },
+    {
+      "generation": 10,
+      "best": 0.959336621344772,
+      "mean": 0.9516200476791005,
+      "std": 0.009783154865603657
+    }
+  ],
+  "evaluations": 153,
+  "duration_seconds": 165.34
+}

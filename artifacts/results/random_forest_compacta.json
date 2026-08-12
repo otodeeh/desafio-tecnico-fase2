@@ -1,0 +1,84 @@
+{
+  "model_name": "random_forest",
+  "config": {
+    "name": "compacta",
+    "population_size": 10,
+    "generations": 6,
+    "crossover_rate": 0.8,
+    "mutation_rate": 0.1,
+    "tournament_size": 3,
+    "elitism": 2,
+    "random_state": 101
+  },
+  "best_genes": {
+    "n_estimators": 155,
+    "max_depth": 8,
+    "min_samples_split": 11,
+    "min_samples_leaf": 4,
+    "max_features": "sqrt",
+    "class_weight": "balanced"
+  },
+  "best_parameters": {
+    "n_estimators": 155,
+    "max_depth": 8,
+    "min_samples_split": 11,
+    "min_samples_leaf": 4,
+    "max_features": "sqrt",
+    "class_weight": "balanced"
+  },
+  "best_fitness": 0.9542911249490196,
+  "cv_metrics": {
+    "accuracy": 0.954,
+    "precision": 0.9211775216653267,
+    "recall": 0.9621621621621621,
+    "f1": 0.9396734844103264,
+    "roc_auc": 0.9900581153552291,
+    "fitness": 0.9542911249490196
+  },
+  "history": [
+    {
+      "generation": 0,
+      "best": 0.9470541201472754,
+      "mean": 0.9354878736228649,
+      "std": 0.0069810441703583945
+    },
+    {
+      "generation": 1,
+      "best": 0.950566391686529,
+      "mean": 0.9442574972412832,
+      "std": 0.005857497643467532
+    },
+    {
+      "generation": 2,
+      "best": 0.9542911249490196,
+      "mean": 0.949516281318532,
+      "std": 0.0022848664273614865
+    },
+    {
+      "generation": 3,
+      "best": 0.9542911249490196,
+      "mean": 0.9509837859069108,
+      "std": 0.001959493912432288
+    },
+    {
+      "generation": 4,
+      "best": 0.9542911249490196,
+      "mean": 0.9479683446888668,
+      "std": 0.00727022104477109
+    },
+    {
+      "generation": 5,
+      "best": 0.9542911249490196,
+      "mean": 0.9494888978599096,
+      "std": 0.007056115797808453
+    },
+    {
+      "generation": 6,
+      "best": 0.9542911249490196,
+      "mean": 0.9504376341709936,
+      "std": 0.004667634302080103
+    }
+  ],
+  "evaluations": 36,
+  "duration_seconds": 36.293
+}

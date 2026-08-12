@@ -1,0 +1,78 @@
+{
+  "model_name": "logistic_regression",
+  "config": {
+    "name": "compacta",
+    "population_size": 10,
+    "generations": 6,
+    "crossover_rate": 0.8,
+    "mutation_rate": 0.1,
+    "tournament_size": 3,
+    "elitism": 2,
+    "random_state": 101
+  },
+  "best_genes": {
+    "log10_C": -1.3677000420626433,
+    "class_weight": "balanced",
+    "solver": "lbfgs"
+  },
+  "best_parameters": {
+    "class_weight": "balanced",
+    "solver": "lbfgs",
+    "C": 0.042884461196201054
+  },
+  "best_fitness": 0.9712184845466729,
+  "cv_metrics": {
+    "accuracy": 0.984,
+    "precision": 0.9891891891891891,
+    "recall": 0.9675675675675676,
+    "f1": 0.97799875893644,
+    "roc_auc": 0.9953667953667955,
+    "fitness": 0.9712184845466729
+  },
+  "history": [
+    {
+      "generation": 0,
+      "best": 0.9712184845466729,
+      "mean": 0.9516517467602672,
+      "std": 0.02275706357076858
+    },
+    {
+      "generation": 1,
+      "best": 0.9712184845466729,
+      "mean": 0.9648790506293411,
+      "std": 0.004749418717690163
+    },
+    {
+      "generation": 2,
+      "best": 0.9712184845466729,
+      "mean": 0.9628372471835623,
+      "std": 0.013885918642052063
+    },
+    {
+      "generation": 3,
+      "best": 0.9712184845466729,
+      "mean": 0.970017307187039,
+      "std": 0.0018900506822725875
+    },
+    {
+      "generation": 4,
+      "best": 0.9712184845466729,
+      "mean": 0.9120293414503513,
+      "std": 0.177567429288965
+    },
+    {
+      "generation": 5,
+      "best": 0.9712184845466729,
+      "mean": 0.9676976707884222,
+      "std": 0.010562441274751921
+    },
+    {
+      "generation": 6,
+      "best": 0.9712184845466729,
+      "mean": 0.971218484546673,
+      "std": 0.0
+    }
+  ],
+  "evaluations": 21,
+  "duration_seconds": 1.301
+}

@@ -1,0 +1,96 @@
+{
+  "model_name": "random_forest",
+  "config": {
+    "name": "balanceada",
+    "population_size": 14,
+    "generations": 8,
+    "crossover_rate": 0.85,
+    "mutation_rate": 0.2,
+    "tournament_size": 3,
+    "elitism": 2,
+    "random_state": 202
+  },
+  "best_genes": {
+    "n_estimators": 98,
+    "max_depth": 8,
+    "min_samples_split": 12,
+    "min_samples_leaf": 4,
+    "max_features": "log2",
+    "class_weight": "balanced"
+  },
+  "best_parameters": {
+    "n_estimators": 98,
+    "max_depth": 8,
+    "min_samples_split": 12,
+    "min_samples_leaf": 4,
+    "max_features": "log2",
+    "class_weight": "balanced"
+  },
+  "best_fitness": 0.9561263915994096,
+  "cv_metrics": {
+    "accuracy": 0.9579999999999999,
+    "precision": 0.9287580437580438,
+    "recall": 0.9623044096728307,
+    "f1": 0.944652929463056,
+    "roc_auc": 0.9885155346955008,
+    "fitness": 0.9561263915994096
+  },
+  "history": [
+    {
+      "generation": 0,
+      "best": 0.95053685461081,
+      "mean": 0.9403446504881214,
+      "std": 0.005160473326366158
+    },
+    {
+      "generation": 1,
+      "best": 0.9515762249944485,
+      "mean": 0.9460286004561803,
+      "std": 0.0037535525160951825
+    },
+    {
+      "generation": 2,
+      "best": 0.9515762249944485,
+      "mean": 0.9447052541996086,
+      "std": 0.006228283022073072
+    },
+    {
+      "generation": 3,
+      "best": 0.9561263915994096,
+      "mean": 0.9482802091704607,
+      "std": 0.004088055139906341
+    },
+    {
+      "generation": 4,
+      "best": 0.9561263915994096,
+      "mean": 0.9494682222697552,
+      "std": 0.003718554262510578
+    },
+    {
+      "generation": 5,
+      "best": 0.9561263915994096,
+      "mean": 0.9503266969577719,
+      "std": 0.0029523431295078056
+    },
+    {
+      "generation": 6,
+      "best": 0.9561263915994096,
+      "mean": 0.9495246333043872,
+      "std": 0.005674219345895345
+    },
+    {
+      "generation": 7,
+      "best": 0.9561263915994096,
+      "mean": 0.9464786018439388,
+      "std": 0.006072998970378928
+    },
+    {
+      "generation": 8,
+      "best": 0.9561263915994096,
+      "mean": 0.9477655248526343,
+      "std": 0.006226265232186842
+    }
+  ],
+  "evaluations": 90,
+  "duration_seconds": 80.21
+}
