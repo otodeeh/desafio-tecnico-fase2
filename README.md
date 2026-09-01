@@ -149,7 +149,6 @@ o conjunto de treino e avaliado uma única vez no teste reservado.
 - [Arquitetura](docs/architecture.md)
 - [Relatório técnico](docs/relatorio-tecnico.md)
 - [Avaliação da LLM](docs/avaliacao-llm.md)
-- [Roteiro do vídeo](docs/roteiro-video.md)
 
 ## Segurança e limitações
 
